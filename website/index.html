@@ -1,0 +1,65 @@
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>YunSensor</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Noto+Sans+HK&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
+  </head>
+<body>
+<header> 
+<div class ='container'>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">Yunsensor</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">主頁</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+</div>
+</header>    
+  <section id ='intro' class="container">
+    <h1 style="font-weight: 500;line-height: 2;">附近地圖資訊</h1>
+    <div id="map" class="map"></div>
+    <div class="controllButtonField pt-3 pb-5">
+      <a id="StartButton" class="btn" href="#" style="font-size: 20px;background: #f03f0c;color: white;padding: 8px 16px;border-radius: 20px;">開始測量</a>
+      <a id="StopButton" class="btn" href="#" style="font-size: 20px;background: #22d673;color: white;padding: 8px 16px;border-radius: 20px;">停止測量</a>
+    </div>
+  </section>
+  <section id ='second'>
+      <div class="container">
+          <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">經度</th>
+                  <th scope="col">緯度</th>
+                  <th scope="col">時間</th>
+                  <th scope="col">日期</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+          </table>
+        </div>
+  </section>
+  <script src="js/map.js"></script>
+  <script src="js/buttonListener.js"></script>
+  <script src="js/table.js"></script>
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa66O-CaRNxau3Lqgxnq0JTjn8PeW8PYU&callback=initMap&libraries=&v=weekly"
+  async
+  ></script>
+</body>
+</html>

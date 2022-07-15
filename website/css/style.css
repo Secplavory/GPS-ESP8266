@@ -1,0 +1,51 @@
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Noto Sans HK', sans-serif; 
+}
+
+p,a,input,label,textarea,span,ul,li{
+    font-family: 'Maven Pro', sans-serif;
+
+}
+
+.brn{
+    font-size: 20px;
+    background: #f03f0c;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+#intro h1{
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+#intro .container{
+   position: relative;
+   top: 50%;
+   -webkit-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
+   transform: translateY(-50%);
+}
+
+#header li{
+    margin: 20px;
+}
+
+.map{
+    height: 500px;
+}
+
+.table{
+    text-align: center;
+}
+
+#second{
+    padding-bottom: 50px;
+}
+
+.controllButtonField{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
